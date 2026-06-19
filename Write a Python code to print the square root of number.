@@ -1,0 +1,20 @@
+import math
+
+while True:
+    try:
+        n = input("Enter a number (or 'q' to quit): ")
+
+        if n.lower() == 'q':
+            print("Program ended.")
+            break
+
+        n = float(n)
+
+        if n < 0:
+            print("Square root of a negative number is not a real number.")
+        else:
+            print("Square root =", math.sqrt(n))
+
+    except ValueError:
+        print("Invalid input! Please enter a valid number.")
+
