@@ -1,0 +1,19 @@
+numbers = [12, 45, 7, 23, 89, 34, 56, 18, 90, 11]
+
+print("List:", numbers)
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+print("Average:", sum(numbers) / len(numbers))
+
+ascending = sorted(numbers)
+print("Ascending Order:", ascending)
+
+descending = sorted(numbers, reverse=True)
+print("Descending Order:", descending)
+
+new_num = int(input("Enter a new number to add: "))
+numbers.append(new_num)
+print("After Adding:", numbers)
+
+numbers.pop(0)
+print("After Removing First Item:", numbers)
